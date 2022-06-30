@@ -13,9 +13,7 @@ jobs:
       with:
         flutter-version: '1.7.8+hotfix.4'
     - run: flutter pub get
-      working-directory: sample-proj
     - run: flutter build apk --debug --split-per-abi
-      working-directory: sample-proj
     - name: Create a Release APK
       uses: ncipollo/release-action@v1
       with:
