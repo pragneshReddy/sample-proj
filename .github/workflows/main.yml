@@ -1,4 +1,7 @@
-on: push
+on:
+ push:
+    tags:
+      - "v*.*.*" 
 name: Test, Build and Release apk
 jobs:
   build:
@@ -19,6 +22,5 @@ jobs:
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
         commit: master
-        tag: v1.0.${{ github.run_number }}
       env:  
         token: ${{ secrets.TOKEN }}
