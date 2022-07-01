@@ -1,4 +1,5 @@
 name: Test, Build and Release apk
+
 on:
  push:
    branches:
@@ -27,4 +28,5 @@ jobs:
         commit: master
       env:  
         token: ${{ secrets.TOKEN }}
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
        
