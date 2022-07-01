@@ -23,5 +23,5 @@ jobs:
         artifacts: "build/app/outputs/apk/debug/*.apk"
         commit: master
       env:  
-       GITHUB_TOKEN: ${{ secrets. PATNAME }}
-        #
+        token: ${{ secrets.TOKEN }}
+       
