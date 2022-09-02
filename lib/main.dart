@@ -40,7 +40,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  //title
+  //title2
   final String title;
 
   @override
