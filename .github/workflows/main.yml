@@ -2,11 +2,8 @@ name: Test, Build and Release apk
 
 on:
  push:
-   branches:
-      - '**'
- create:
-    tags:
-      - v*
+   tags:
+     - '*'
 jobs:
   build:
     name: Build APK
